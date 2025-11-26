@@ -39,7 +39,7 @@ signupForm.addEventListener('submit', async (e) => {
   } else {
     successMessage.textContent = 'Account created successfully! Redirecting...';
     setTimeout(() => {
-      window.location.href = '/dashboard.html';
+      window.location.href = 'dashboard.html';
     }, 1500);
   }
 });

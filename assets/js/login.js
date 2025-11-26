@@ -21,7 +21,7 @@ loginForm.addEventListener('submit', async (e) => {
     loginBtn.disabled = false;
     loginBtn.textContent = 'Sign In';
   } else {
-    window.location.href = '/dashboard.html';
+    window.location.href = 'dashboard.html';
   }
 });
 
