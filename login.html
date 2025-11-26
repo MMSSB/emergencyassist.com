@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Emergency Assistance</title>
+    <link rel="stylesheet" href="assets/css/sign.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="auth-card">
+
+        <div class="auth-header"  style="justify-items: center;">
+                          <div class="app-logo" style="width: 50px; height: 50px;">
+                      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          </div>
+          <h1>Welcome Back</h1>
+          <p>Sign in to your account</p>
+        </div>
+
+        <form id="loginForm" class="auth-form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <div id="errorMessage" class="error-message"></div>
+
+          <button type="submit" class="btn-primary" id="loginBtn">
+            Sign In
+          </button>
+        </form>
+
+        <div class="auth-footer">
+          <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="assets/js/login.js"></script>
+  </body>
+</html>
